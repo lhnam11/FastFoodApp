@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_user_info"
+    android:padding="16dp">
+
+    <!-- Image View for profile image -->
+    <ImageView
+        android:id="@+id/imageHinhAnhinf"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="32dp"/>
+
+    <!-- TextView for Full name -->
+    <TextView
+        android:id="@+id/tvFullNameinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Full name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <!-- TextView for Email -->
+    <TextView
+        android:id="@+id/tvEmailinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Email"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic"/>
+
+    <!-- TextView for Phone -->
+    <TextView
+        android:id="@+id/tvPhoneinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Phone"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView for Username -->
+    <TextView
+        android:id="@+id/tvUsernameinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Username"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TextView for Password -->
+    <TextView
+        android:id="@+id/tvPassWordinf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Password"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="#C549DA"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_background" />
+
+    <EditText
+        android:id="@+id/userDKFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/name"
+        android:layout_marginTop="90dp"
+        android:hint=" Full Name" />
+    <EditText
+        android:id="@+id/userDKEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/email"
+        android:layout_below="@+id/userDKFullName"
+        android:layout_marginTop="15dp"
+        android:hint=" Email" />
+    <EditText
+        android:id="@+id/userDKPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/phone"
+        android:layout_below="@+id/userDKEmail"
+        android:layout_marginTop="15dp"
+        android:hint=" Phone" />
+    <EditText
+        android:id="@+id/userDKName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/name"
+        android:layout_below="@+id/userDKPhone"
+        android:layout_marginTop="15dp"
+        android:hint=" User Name" />
+
+    <EditText
+        android:id="@+id/DKpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userDKName"
+        android:drawableStart="@drawable/password"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint=" Password" />
+
+    <EditText
+        android:id="@+id/DKrepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DKpassword"
+        android:drawableStart="@drawable/password"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:hint=" Confirm Password" />
+    <EditText
+        android:id="@+id/ImagDK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DKrepassword"
+        android:drawableStart="@drawable/image"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:hint="Hình ảnh" />
+    <EditText
+        android:id="@+id/txtAdminOrUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImagDK"
+        android:drawableStart="@drawable/admin"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:hint="Is admin (0) or Is user (1)" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAdminOrUser"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsignup"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="15dp"
+        android:text="Existing user! Go to Sign in page" />
+
+</RelativeLayout>

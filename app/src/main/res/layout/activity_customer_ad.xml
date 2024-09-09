@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerAD">
+
+    <!-- Title TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý khách hàng"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#FF7F3E" />
+
+    <!-- LinearLayout for user input and actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="25dp">
+
+        <!-- EditText for User ID -->
+        <EditText
+            android:id="@+id/editTextUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User ID"
+            android:textColor="@android:color/black" />
+
+        <!-- EditText for Name -->
+        <EditText
+            android:id="@+id/editTextNameC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- EditText for Email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- EditText for Phone -->
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- EditText for Username -->
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- EditText for Password -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- EditText for Image URL -->
+        <EditText
+            android:id="@+id/editTextImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Image URL"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- EditText for Is Admin -->
+        <EditText
+            android:id="@+id/editTextIsAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Is Admin (0 or 1)"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- LinearLayout for action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Button Add -->
+            <Button
+                android:id="@+id/buttonAddUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textColor="@android:color/black" />
+
+            <!-- Button Edit -->
+            <Button
+                android:id="@+id/buttonEditUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="16dp" />
+
+            <!-- Button Delete -->
+            <Button
+                android:id="@+id/buttonDeleteUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- ListView for displaying users -->
+        <ListView
+            android:id="@+id/listViewUsers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+        <!-- Button Back -->
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:text="Back" />
+    </LinearLayout>
+</FrameLayout>

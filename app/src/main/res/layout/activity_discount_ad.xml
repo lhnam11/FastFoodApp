@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment_discount">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý mã giảm giá"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#FF7F3E" />
+
+    <!-- Thông tin mã giảm giá -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etMaGiam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã giảm giá"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/etThongTinGiam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thông tin giảm giá"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etPhanTramGiam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phần trăm giảm"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etSoLuongMa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số lượng mã"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etHinhAnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL hình ảnh"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Danh sách mã giảm giá -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lsGiamGia"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+
+        <!-- Button Quay lại -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+</LinearLayout>
